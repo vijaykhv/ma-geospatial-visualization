@@ -148,7 +148,7 @@
 
             // Tooltips
             const tooltipTextMapA = d => `Town: ${d.properties.TOWN}<br>Population 1980: ${d.properties.POP1980}`;
-            const tooltipTextMapB = d => `Town: ${d.properties.TOWN}<br>Pop Change (1980-2010): ${d.properties.POP2010 - d.properties.POP1980}`;
+            const tooltipTextMapB = d => `Town: ${d.properties.TOWN}<br>Population 1980: ${d.properties.POP1980}<br>Population 2010: ${d.properties.POP2010}<br>Pop Change (1980-2010): ${d.properties.POP2010 - d.properties.POP1980}`;
             const tooltipTextMapC = d => {
                 const countyName = String(fipsToCounty[d.properties.FIPS_STCO]);
                 const countyData = giniDataSimplified.filter(g => String(g.county) === countyName);
